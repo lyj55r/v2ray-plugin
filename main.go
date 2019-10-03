@@ -140,7 +140,7 @@ func generateConfig() (*core.Config, error) {
 			},
 		}
 		if *mux != 0 {
-			connectionReuse = true
+			connectionReuse = true //jinyong
 		}
 	case "quic":
 		transportSettings = &quic.Config{
